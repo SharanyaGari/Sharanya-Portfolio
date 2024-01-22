@@ -1,0 +1,325 @@
+/*CSS Variables*/
+
+:root {
+--primary-color:#f0f8ff;
+--secondary-color: #54331d;
+--white-color: #ede7e3;
+--black-color: #353331;
+--black75: hsla(24, 4%, 20%, 0.75);
+--black50: hsla(24, 4%, 20%, 0.5);
+--primary75: hsla(24, 49%, 22%, 0.75);
+--secondary75: hsl(24, 49%, 22%, 0.75);
+}
+
+  
+/*Global Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-row {
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+.flex-column {
+   display:flex;
+   flex-direction: column;
+   gap: 1rem; 
+   grid-template-columns: auto;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content:space-between;
+    background-color:var(--primary-color);
+    
+    height: auto;    
+}
+
+header p {
+    display: flex;
+    font-family: cursive;
+    font-size: 2rem;
+    color:brown;
+    padding:2rem;
+    
+    
+}
+
+
+header img {
+    height:5rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    padding: 2.5rem;
+    font-size: 1.5rem;
+}
+
+header a {
+    text-decoration: none;
+    margin:1rem;
+    color:var(--black-color);
+    cursor: pointer;
+}
+
+nav a:hover {
+    color:brown;
+}
+
+
+/* main */
+
+main {
+    background-color:var(--primary-color);
+
+}
+/*
+main h2 {
+    padding-top: 1rem;
+    padding-left: 40rem;
+    font-size: 40px;
+}
+*/
+/* hero */
+
+.hero {
+    height: 80vh;
+    min-height: 350px;
+    background-image: url("../images/test-automation-engineer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-items {
+    display: flex;
+    color: var(--white-color);
+    font-size: 2rem;
+    padding-top: 10rem;
+    font-family:serif;
+    
+}
+
+/* about */
+
+#about {
+    display: flex;  
+    justify-content: center; 
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.detail {
+    display: flex;
+    justify-content:center;
+
+}
+
+.detail img {
+    display: flex;
+    justify-content: center;
+    height:400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.detail p {
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    padding-top: 3rem;
+    width: 400px;
+    font-size: 1rem;  
+}
+
+/* Project */
+
+
+#project h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 1rem 1rem;
+    gap: 1rem 1rem;
+    padding:1rem;
+}
+
+.project-items {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid hsla(0,0%,82.7%,.397);
+    justify-content: center;
+    align-content: center;
+}
+
+.project-image {
+    position: relative;
+    height: 260px;
+    width: 260px;
+    object-fit:contain;
+    object-fit: fill;
+    overflow: hidden;
+    text-align: center;
+    padding:1rem;
+}
+.project-detail {
+    text-align: center;
+}
+
+.card-title {
+    color: --black50;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 15px 0 0;
+}
+
+.card-subtitle {
+    color: --black75;
+    font-size: 17px;
+    line-height: 1.5rem;
+}
+
+.project-footer a {
+    padding: 2rem;
+    text-decoration: none;
+    color: crimson;
+    cursor: pointer;
+}
+
+/* Contact Me */
+
+#contactme {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+
+}
+
+#contactme h2 {
+    padding-bottom: 1rem;
+}
+
+.collab-container {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/contact.jpg");
+    height: 55vh;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 0.5rem;
+    padding: 2rem;
+}
+
+textarea {
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color:var(--primary-color);
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    padding:1rem;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+footer ul {
+    justify-content: center;
+}
+
+.footer-item {
+    font-size: 2rem;
+    padding:1rem;
+    padding-bottom: 4rem;
+}
+
+.footer-item h2 {
+    padding:2rem;
+}
+
+#project1 {
+    background-color:var(--primary-color);
+    padding:0.5rem;
+}
+
+#Projectheader {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.projectmain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+#contactheader {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+/*Responsive Design*/
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+ }
